@@ -1,0 +1,48 @@
+﻿<Window x:Class="PolicyEndorsementManagement.ViewDocuments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PolicyEndorsementManagement"
+        mc:Ignorable="d"
+        Title="ViewDocuments" Height="450" Width="800">
+    <Grid>
+        <Grid Name="viewdoc" Visibility="Visible">
+
+            <ComboBox Visibility="Visible" Name="cbImages" HorizontalAlignment="Left" Margin="422,104,0,0" VerticalAlignment="Top" Width="153" Height="40"/>
+            <Image Name="image2" HorizontalAlignment="Left" Height="345" Margin="44,35,0,0" VerticalAlignment="Top" Width="296"/>
+            <Button Name="btnshow" Visibility="Visible"  Content="Show" Background="CadetBlue" HorizontalAlignment="Left" Margin="620,106,0,0" VerticalAlignment="Top" Width="113" Click="Btnshow_Click" Height="38"/>
+            <Button x:Name="btnsearch"  Content="Search" Background="CadetBlue" HorizontalAlignment="Left" Margin="620,23,0,0" VerticalAlignment="Top" Width="113" Click="Btnsearch_Click" Height="38"/>
+            <Label x:Name="lbl_id" HorizontalAlignment="Left"  Background="White" Foreground="Black"   FontStyle="Italic" FontWeight="Bold" Margin="242,20,0,0" VerticalAlignment="Top" Height="46" Width="140" Content="Enter Customer Id"/>
+            <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="46" Margin="422,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+            <Label Visibility="Hidden" x:Name="lbl_endid" Content="Endorcement Id :" HorizontalAlignment="Left" Margin="422,194,0,0" VerticalAlignment="Top" Height="48" Width="153" FontWeight="Bold" FontFamily="Sitka Text"/>
+            <TextBox Visibility="Hidden" x:Name="txtEndid" HorizontalAlignment="Left" Height="48" Margin="620,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+            <Label Visibility="Hidden" x:Name="lbl_id1" Content="Customer Id: " HorizontalAlignment="Left" Margin="422,284,0,0" VerticalAlignment="Top" Height="48" Width="153" FontWeight="Bold" FontFamily="Sitka Text"/>
+            <TextBox Visibility="Hidden" x:Name="txtid1" HorizontalAlignment="Left" Height="48" Margin="620,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+            <Button x:Name="btn_Status" Content="Update Endoresement Status" Visibility="Hidden" Background="CadetBlue" HorizontalAlignment="Left" Margin="451,337,0,0" VerticalAlignment="Top" Width="282" Height="43" FontSize="20" Click="Update_Status_click"/>
+
+
+            <Grid.Background>
+
+                <ImageBrush ImageSource="Images/image1.jpg"/>
+            </Grid.Background>
+
+        </Grid>
+        <Grid Name="status" Visibility="Hidden">
+            <Label x:Name="lbl_CustomerId" Content="Customer Id"  Background="White" Foreground="Black"  FontStyle="Italic" FontWeight="Bold"  HorizontalAlignment="Left" Margin="194,33,0,0" VerticalAlignment="Top" FontSize="20" Width="210"/>
+            <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="37" Margin="487,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+            <Label x:Name="lbl_EndorsementId" Content="Endorsement Id"  Background="White" Foreground="Black" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="194,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,-2.113" Height="36" FontSize="20" Width="210"/>
+            <TextBox x:Name="txt_EnId" HorizontalAlignment="Left" Height="36" Margin="487,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+            <Label x:Name="lbl_Status" Content="EndoresementStatus"  Background="White" Foreground="Black"  FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="194,163,0,0" VerticalAlignment="Top" Height="37" Width="210" FontSize="20"/>
+            <TextBox x:Name="txt_Status" HorizontalAlignment="Left" Height="41" Margin="487,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+            <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Background="CadetBlue" Margin="369,280,0,0" VerticalAlignment="Top" Width="109" Click="Btn_add_Click" Height="43" FontSize="20"/>
+            <Button Content="Logout" HorizontalAlignment="Left" Margin="554,277,0,0" Background="CadetBlue" VerticalAlignment="Top" Width="117" Height="46" Click="AdminLogout_btn" FontSize="20"/>
+        </Grid>
+
+        <Grid.Background>
+
+            <ImageBrush ImageSource="Images/image1.jpg"/>
+        </Grid.Background>
+
+    </Grid>
+</Window>

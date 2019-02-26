@@ -19,7 +19,7 @@
             </DataGrid>
         </ScrollViewer>
         <TextBox x:Name="txt_custId" HorizontalAlignment="Left" Height="56" Margin="348,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
-        <Label Content="Customer Id:" HorizontalAlignment="Left"   FontStyle="Italic" FontWeight="Bold" Background="White" Foreground="Black" Margin="139,89,0,0" VerticalAlignment="Top" Height="56" Width="159" FontSize="22"/>
+        <Label Content="Customer Id:" HorizontalAlignment="Left"   FontStyle="Italic" FontWeight="Bold" Background="White" Foreground="Black" Margin="157,89,0,0" VerticalAlignment="Top" Height="56" Width="159" FontSize="22"/>
         <Button x:Name="btn_ViewStatus" Content="Search Status" Background="CadetBlue" HorizontalAlignment="Left" Margin="631,56,0,0" VerticalAlignment="Top" Width="189" Click="btn_status" Height="52" FontSize="20" FontFamily="Times New Roman"/>
         <Button x:Name="btn_Back" Content="Cancel" Background="CadetBlue" HorizontalAlignment="Left" Margin="631,392,0,0" VerticalAlignment="Top" Width="189" Click="btn_back" Height="62" FontSize="20"/>
 

@@ -12,6 +12,5 @@ namespace Policy_Entities
         public int EndorsementId { get; set; }
         public string Id { get; set; }
         public string ImageName { get; set; }
-        public int MyProperty { get; set; }
     }
 }

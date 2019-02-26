@@ -1,0 +1,22 @@
+﻿<Window x:Class="PolicyEndorsementManagement.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PolicyEndorsementManagement"
+        mc:Ignorable="d"
+        Title="HomePage" Height="450" Width="800">
+    <Grid>
+        <Label Content="Policy Endorsement System" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top" Width="512" Height="68" FontSize="36" FontFamily="Matura MT Script Capitals" FontStyle="Italic"/>
+        <Button x:Name="Btn_update" Content="View and Update"  Background="CadetBlue"  HorizontalAlignment="Left" Margin="56,110,0,0" VerticalAlignment="Top" Width="122" Height="32" RenderTransformOrigin="0.4,0.5" Click="Btn_update_Click"/>
+        <Button x:Name="Btn_upload" Content="Upload" Background="CadetBlue"  HorizontalAlignment="Left" Margin="56,182,0,0" VerticalAlignment="Top" Width="122" Height="32" RenderTransformOrigin="-0.495,1.672" Click="Btn_upload_Click"/>
+        <Button x:Name="Btn_view" Content="View Endorsement Status"  Background="CadetBlue"  HorizontalAlignment="Left" Margin="56,312,0,0" VerticalAlignment="Top" Width="151" Height="32" Click="Btn_view_Click"/>
+        <Button x:Name="btn_LogOut" Content="Log Out" Background="CadetBlue" HorizontalAlignment="Left" Margin="611,329,0,0" VerticalAlignment="Top" Width="96" Height="32" Click="Btn_LogOut_Click"/>
+        <Button x:Name="Searchandedit" Content="Search and Edit" Background="CadetBlue"  HorizontalAlignment="Left" Margin="56,239,0,0" VerticalAlignment="Top" Width="122" Height="32" RenderTransformOrigin="-0.495,1.672" Click="Btn_edit_Click"/>
+
+        <Grid.Background>
+
+            <ImageBrush ImageSource="Images/image1.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>

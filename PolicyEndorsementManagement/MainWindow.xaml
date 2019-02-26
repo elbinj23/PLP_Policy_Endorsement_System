@@ -1,0 +1,23 @@
+﻿<Window x:Class="PolicyEndorsementManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PolicyEndorsementManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl_LoginId"   Background="White" Foreground="Black"  Content="LOGIN ID :" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="166,128,0,0" VerticalAlignment="Top" Height="28" Width="136" FontSize="16"/>
+        <TextBox x:Name="txt_loginId" HorizontalAlignment="Right" Height="28" Margin="0,128,280,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" FontSize="16"/>
+        <Label x:Name="lbl_PassWord" Background="White" Foreground="Black" Content="PASSWORD :" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="166,210,0,0" VerticalAlignment="Top" Height="28" Width="136" FontSize="16"/>
+        <Button x:Name="btn_Login" Content="LOGIN" Background="CadetBlue"  HorizontalAlignment="Left" Margin="121,309,0,0" VerticalAlignment="Top" Width="117" Height="50" FontSize="22" Click="Btn_Login_Click"/>
+        <Button x:Name="btn_Reset" Content="RESET" Background="CadetBlue" HorizontalAlignment="Left" Margin="314,309,0,0" VerticalAlignment="Top" Width="117" Height="50" FontSize="22" Click="Btn_Reset_Click"/>
+        <Label Content="Policy Endorsement System" HorizontalAlignment="Left" Margin="139,12,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.594,-0.809" Height="64" Width="479" FontSize="36" FontFamily="Matura MT Script Capitals"/>
+        <PasswordBox x:Name="txt_pswd" HorizontalAlignment="Right" Margin="0,210,280,0" VerticalAlignment="Top" Width="194" Height="28" FontSize="16"/>
+        <Button x:Name="btn_Cancel" Content="CANCEL" Background="CadetBlue" HorizontalAlignment="Left" Margin="512,309,0,0" VerticalAlignment="Top" Width="117" Height="50" FontSize="22" Click="Btn_cancel_Click"/>
+        <Grid.Background>
+
+            <ImageBrush ImageSource="Images/image1.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>

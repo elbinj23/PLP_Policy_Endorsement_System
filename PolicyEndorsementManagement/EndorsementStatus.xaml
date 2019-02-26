@@ -1,0 +1,27 @@
+﻿<Window x:Class="PolicyEndorsementManagement.EndorsementStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PolicyEndorsementManagement"
+        mc:Ignorable="d"
+        Title="EndorsementStatus" Height="600" Width="1000">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/image1.jpg"/>
+        </Grid.Background>
+        <ScrollViewer>
+            <DataGrid x:Name="dg_status" ScrollViewer.HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Left" Height="156" Margin="10,231,0,0" VerticalAlignment="Top" Width="972">
+                <DataGrid.Background>
+                    <ImageBrush/>
+                </DataGrid.Background>
+            </DataGrid>
+        </ScrollViewer>
+        <TextBox x:Name="txt_custId" HorizontalAlignment="Left" Height="56" Margin="348,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Customer Id:" HorizontalAlignment="Left"   FontStyle="Italic" FontWeight="Bold" Background="White" Foreground="Black" Margin="139,89,0,0" VerticalAlignment="Top" Height="56" Width="159" FontSize="22"/>
+        <Button x:Name="btn_ViewStatus" Content="Search Status" Background="CadetBlue" HorizontalAlignment="Left" Margin="631,56,0,0" VerticalAlignment="Top" Width="189" Click="btn_status" Height="52" FontSize="20" FontFamily="Times New Roman"/>
+        <Button x:Name="btn_Back" Content="Cancel" Background="CadetBlue" HorizontalAlignment="Left" Margin="631,392,0,0" VerticalAlignment="Top" Width="189" Click="btn_back" Height="62" FontSize="20"/>
+
+    </Grid>
+</Window>
